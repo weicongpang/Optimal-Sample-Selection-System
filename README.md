@@ -1,24 +1,24 @@
 Click on the pdf file to read more details: 
 [Optimal Sample Selection System Readme.pdf](https://github.com/weicongpang/Optimal-Sample-Selection-System/files/11429828/Optimal.Sample.Selection.System.Readme.pdf)
 
-## 1.About: 
+# 1.About: 
 Optimal Sample Selection System aims to extract a subset of samples from a large dataset of m samples (45 ≤ m ≤ 54) in a fair and unbiased manner while also optimizing the selected subset for maximum effectiveness. The approach proposed involves selecting any n (7 ≤ n ≤ 25) samples out of the dataset and randomly selecting k=6 (4 ≤ k ≤ 7) samples from each of the nCk groups of k=6 samples. From these groups, we aim to optimize the selection by ensuring that at least one group of k samples has s (3 ≤ s ≤ 7) samples selected from the j (where s ≤ j ≤ k) samples.
 
-## 2.Usage: 
+# 2.Usage: 
 
-# 2.1  Installation
+## 2.1  Installation
 
 • To use the Optimal Sample Selection System, just run the executable file(.exe file) from the project's GitHub repository and save it to your computer. No installation is necessary.
 
-# 2.2  Commands
+## 2.2  Commands
 •	To run the system, simply double-click the executable file to launch the GUI. You can also run the system from the command line using the following command:
 python UI.py.
 •	Once the application is launched, the user can input values for the parameters: m, n, k, j, and s. The user has the option to input their own value for "n" or have the system generate a random value. However, the user must input "k" before they can input "j". Furthermore, the user must input "j" before they can input "s", as "s" is bound with both parameters.
 •	If users want to export the output results to an excel file, they need to modify a section of the UI.py code. The section that needs to be modified is the filepath variable, which needs to be changed to the file path specified by the user in their computer. The code that needs to be modified by the user is in the output_data() function, where filepath is set to "..\Group Project(v1.0.7)\output.xlsx".
 
-## 3. User Interface Development
+# 3. User Interface Development
 
-# 3.1 Input Parameters
+## 3.1 Input Parameters
 •	The Optimal Sample Selection System provides the following five input parameters:
 m：total samples (45≤m≤54)
 n:  n samples out of total samples (7≤n≤25)
@@ -27,19 +27,19 @@ j：j samples selected from the n samples (s≤j≤k)
 s：s samples selected from the j samples (3≤s≤7)
 Users can input the value of n manually or use the system to randomly generate it. The input field for j is disabled until the user inputs a value for k. Also, the input field for s is disabled until the user inputs a value for j. 
 
-# 3.2 Output boxes
+## 3.2 Output boxes
 •	The system provides two output boxes:
 Sample Selection Output Box: displays the selected n samples from a total of m samples.
 Final Sample Output Box: displays the final generated samples. 
   
-# 3.3 Clearing Inputs and Outputs
+## 3.3 Clearing Inputs and Outputs
 •	The Optimal Sample Selection System allows users to clear all input and output boxes on the UI. This is useful when the user wants to start fresh or make a new selection.
 
-# 3.4 Importing Input and Exporting Output
+## 3.4 Importing Input and Exporting Output
 •	Users can search for previous user input and output records in an Excel file and choose to import input data and generate corresponding output results from the Excel file. This function provides a more convenient way of data management and use, which helps users improve efficiency and accuracy in data processing and analysis.
 
 
-## 4. File Structure: 
+# 4. File Structure: 
 
 The Optimal Sample Selection System includes the following main and relevant files:
 •	UI.py: This is the main file for running the application. It contains the user interface and imports algorithmtwo.py for the sample selection algorithm.
@@ -78,10 +78,10 @@ The "pycache/" directory contains compiled results cached by the Python interpre
 "output.xlsx" is the output file exported after running the program, while "test_case.xlsx" is a test case file for importing input parameters.
 "README.md" is the project's documentation file.
 
-## 5. Contribution
+# 5. Contribution
 Contributions to the Optimal Sample Selection System are welcomed and appreciated. Users can fork the project on GitHub and submit pull requests for new features or bug fixes.
 
-## 6. Resources
+# 6. Resources
 The Optimal Sample Selection System is built using Python and the tkinter library. The system also utilizes Openpyxl for Excel file input and output.
 
 
