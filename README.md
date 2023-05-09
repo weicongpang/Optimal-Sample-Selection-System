@@ -1,5 +1,5 @@
 Click on the pdf file to read more details: 
-[Optimal Sample Selection System Readme.pdf](https://github.com/weicongpang/Optimal-Sample-Selection-System/files/11420071/Optimal.Sample.Selection.System.Readme.pdf)
+[Optimal Sample Selection System Readme.pdf](https://github.com/weicongpang/Optimal-Sample-Selection-System/files/11429828/Optimal.Sample.Selection.System.Readme.pdf)
 
 1.About: 
 Optimal Sample Selection System aims to extract a subset of samples from a large dataset of m samples (45 ≤ m ≤ 54) in a fair and unbiased manner while also optimizing the selected subset for maximum effectiveness. The approach proposed involves selecting any n (7 ≤ n ≤ 25) samples out of the dataset and randomly selecting k=6 (4 ≤ k ≤ 7) samples from each of the nCk groups of k=6 samples. From these groups, we aim to optimize the selection by ensuring that at least one group of k samples has s (3 ≤ s ≤ 7) samples selected from the j (where s ≤ j ≤ k) samples.
@@ -7,13 +7,14 @@ Optimal Sample Selection System aims to extract a subset of samples from a large
 2.Usage: 
 
 2.1  Installation
+
 • To use the Optimal Sample Selection System, just run the executable file(.exe file) from the project's GitHub repository and save it to your computer. No installation is necessary.
 
 2.2  Commands
 •	To run the system, simply double-click the executable file to launch the GUI. You can also run the system from the command line using the following command:
 python UI.py.
 •	Once the application is launched, the user can input values for the parameters: m, n, k, j, and s. The user has the option to input their own value for "n" or have the system generate a random value. However, the user must input "k" before they can input "j". Furthermore, the user must input "j" before they can input "s", as "s" is bound with both parameters.
-•	If users want to export the output results to an excel file, they need to modify a section of the UI.py code. The section that needs to be modified is the filepath variable, which needs to be changed to the file path specified by the user in their computer. The code that needs to be modified by the user is in the output_data() function, where filepath is set to "D:\MUST 2302学期\人工智能\Group Project(v1.0.6)\output.xlsx".
+•	If users want to export the output results to an excel file, they need to modify a section of the UI.py code. The section that needs to be modified is the filepath variable, which needs to be changed to the file path specified by the user in their computer. The code that needs to be modified by the user is in the output_data() function, where filepath is set to "..\Group Project(v1.0.7)\output.xlsx".
 
 3. User Interface Development
 
@@ -58,7 +59,8 @@ Optimal-Sample-Selection-System/
 │   
 ├── dist/
 │   ├── UI.exe
-│   ├── 
+│   |—— ...
+
 │   
 ├── _pycache_/
 │   ├── algorithmtwo.cpython-311.pyc
